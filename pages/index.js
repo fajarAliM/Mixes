@@ -34,6 +34,9 @@ export default function IndexPage() {
 				<h1 className="font-bold text-5xl text-center text-accent-1 mb-4">
 					Create a Tape
 				</h1>
+				<h2 className="font-bold text-5xl text-center text-accent-1 mb-4">
+				Spotify is a great tool for making mixtapes. With this tool you can take all your favorite songs from Spotify and we will help you use your tapes most efficiently. 
+				</h2>
 				<form className="flex" onSubmit={ handleSubmit }>
 					<input
 						className="bg-gray-200 appearance-none border border-gray-400 rounded w-full py-2 px-4 text-gray-700 focus:outline-none focus:border-red-500"
@@ -41,7 +44,7 @@ export default function IndexPage() {
 						name="q"
 						value={ url || '' }
 						onChange={ ( event ) => setUrl( event.target.value ) }
-						placeholder="Enter a Spotify playlist URL and we'll help create your mixes."
+						placeholder="Enter a Spotify playlist URL."
 					/>
 					<select
 						className="bg-gray-200 border border-gray-400 text-gray-700 py-3 px-4 ml-2 rounded lfocus:outline-none focus:border-red-500"
