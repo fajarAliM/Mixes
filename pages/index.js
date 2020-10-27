@@ -34,7 +34,7 @@ export default function IndexPage() {
 				<h1 className="font-bold text-5xl text-center text-accent-1 mb-4">
 					Create a Tape
 				</h1>
-				<h2 className="font-bold text-5xl text-center text-accent-1 mb-4">
+				<h2 className="font-bold text-1xl text-center text-accent-1 mb-4">
 				Spotify is a great tool for making mixtapes. With this tool you can take all your favorite songs from Spotify and we will help you use your tapes most efficiently. 
 				</h2>
 				<form className="flex" onSubmit={ handleSubmit }>
