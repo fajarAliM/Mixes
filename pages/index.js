@@ -41,7 +41,7 @@ export default function IndexPage() {
 						name="q"
 						value={ url || '' }
 						onChange={ ( event ) => setUrl( event.target.value ) }
-						placeholder="Enter Spotify playlist URL"
+						placeholder="Give us a Spotify playlist URL and we'll help pack your tapes with tunes."
 					/>
 					<select
 						className="bg-gray-200 border border-gray-400 text-gray-700 py-3 px-4 ml-2 rounded lfocus:outline-none focus:border-red-500"
