@@ -28,7 +28,7 @@ export default function IndexPage() {
 	return (
 		<div className="font-sans antialiased flex max-w-2xl mx-auto mt-10">
 			<Head>
-				<title>Create a Tape</title>
+				<title>Create a Tape by bsides</title>
 			</Head>
 			<div className="w-full">
 				<h1 className="font-bold text-5xl text-center text-accent-1 mb-4">
