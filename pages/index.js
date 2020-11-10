@@ -26,8 +26,8 @@ export default function IndexPage() {
 	};
 
 	return (
+		<div className="font-sans antialiased flex max-w-2xl mx-auto mt-10">
 			<Head>
-			<div className="font-sans antialiased flex max-w-2xl mx-auto mt-10">
 				<title>Create a Tape by bsides</title>
 				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 				<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
