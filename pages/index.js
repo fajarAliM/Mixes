@@ -27,15 +27,15 @@ export default function IndexPage() {
 
 	return (
 			<Head>
+			<div className="font-sans antialiased flex max-w-2xl mx-auto mt-10">
 				<title>Create a Tape by bsides</title>
 				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 				<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 				<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 				<link rel="manifest" href="/site.webmanifest" />
 				<meta name="msapplication-TileColor" content="#da532c" />
-				<meta name="theme-color" content="#ffffff">
+				<meta name="theme-color" content="#ffffff" />
 			</Head>
-		<div className="font-sans antialiased flex max-w-2xl mx-auto mt-10">
 			<div className="w-full">
 				<h1 className="font-bold text-5xl text-center text-accent-1 mb-4">
 					Create a Tape
