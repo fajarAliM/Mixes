@@ -34,7 +34,7 @@ export default function IndexPage() {
 				<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 				<link rel="manifest" href="/site.webmanifest">
 				<meta name="msapplication-TileColor" content="#da532c">
-				<meta name="theme-color" content="#ffffff"></meta>
+				<meta name="theme-color" content="#ffffff">
 			</Head>
 			<div className="w-full">
 				<h1 className="font-bold text-5xl text-center text-accent-1 mb-4">
