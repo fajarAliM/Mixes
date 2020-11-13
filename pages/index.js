@@ -24,7 +24,7 @@ export default function IndexPage() {
 		// } else {
 		// 	setError(true);
 		// }
-		
+
 		router.push({
 			pathname: `/createTape`
 		});
@@ -49,24 +49,21 @@ export default function IndexPage() {
 				<meta name="theme-color" content="#ffffff" />
 			</Head>
 
-			{load && <div className="flex flex-col items-center">
-				<LoadingSplash />
-			</div>}
+			{load && <LoadingSplash />}
 
 
 			{!load &&
-				<React.Fragment>
-					<img src={'../static/logo.png'} alt="logo-image" className=" ml-16 mt-16 w-56" />
-					<div className="w-4/5 px-16 mt-16">
-						<h1 className="text-AgrandirBlack font-Agrandir">
-							Create a Tape
-				</h1>
-						<p className="font-Agrandir-Regular font-bold font-hairline text-AgrandirRegular mb-4">
-							Spotify is a great tool for making <span className="font-Agrandir text-indigo-500">mixtapes.</span> With this tool you can take all your favorite songs from Spotify and we will help you use your tapes most efficiently.
-				</p>
-						<form className="flex flex-row mt-16 justify-between w-4/5" onSubmit={handleSubmit}>
+				<div className="mt-8 sm:mt-16">
+					<div className="w-full xl:w-4/5 px-6 md:px-16">
+						<img src={'../static/logo.png'} alt="logo-image" className="w-32 sm:w-48 md:w-56" />
+						<h1 className="text-4xl sm:text-5xl md:text-6xl font-Agrandir mt-8 sm:mt-16">Create a Tape</h1>
+						<p className="leading-small sm:leading-medium md:leading-large font-Agrandir-Regular font-bold font-hairline text-3xl sm:text-4xl md:text-5xl mb-6">
+							Spotify is a great tool for making&nbsp;
+							<span className="font-Agrandir text-indigo-500">mixtapes.&nbsp;</span>
+							With this tool you can take all your favorite songs from Spotify and we will help you use your tapes most efficiently.</p>
+						<form className="flex flex-col justify-between items-center lg:flex-row mt-8 sm:mt-16 w-full lg:w-4/5 pb-32" onSubmit={handleSubmit}>
 							<input
-								className="h-16 flex-1 border border-gray-600 px-4 tracking-widest"
+								className="w-full lg:flex-1 border border-gray-600 px-4 tracking-widest h-12 md:h-16"
 								type="url"
 								name="q"
 								value={url || ''}
@@ -74,7 +71,7 @@ export default function IndexPage() {
 								placeholder="ENTER A SPOTIFY URL"
 							/>
 							<select
-								className="w-32 mx-4 border border-gray-600 px-2 font-bold"
+								className="w-full lg:w-32 mx-0 lg:mx-4 border border-gray-600 px-2 font-bold mt-6 lg:mt-0 h-12 md:h-16"
 								id="length"
 								value={length}
 								onChange={(event) =>
@@ -85,7 +82,7 @@ export default function IndexPage() {
 								<option value="90">C90</option>
 								<option value="120">C120</option>
 							</select>
-							<button className="w-64 text-2xl mx-4 submit-button font-Agrandir-Tight">
+							<button className="w-64 text-2xl mx-0 lg:mx-4 submit-button font-Agrandir-Tight mt-6 lg:mt-0 h-16">
 								Submit
 					</button>
 						</form>
@@ -98,7 +95,7 @@ export default function IndexPage() {
 							</div>
 						)}
 					</div>
-				</React.Fragment>
+				</div>
 			}
 		</div>
 	);

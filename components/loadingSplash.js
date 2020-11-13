@@ -6,8 +6,8 @@ export default function LoadingSplash() {
             <Head>
 				<title>Loading...</title>
 			</Head>
-            <img src={'../static/logo.png'} alt="logo-image" />
-            <p className="text-AgrandirBlack font-Agrandir mt-10">Loading</p>
+            <img className="px-6 sm:px-24" src={'../static/logo.png'} alt="logo-image" />
+            <p className="text-5xl sm:text-6xl md:text-7xl font-Agrandir mt-10">Loading</p>
         </div>
     )
 }

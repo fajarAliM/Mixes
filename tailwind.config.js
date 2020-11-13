@@ -14,11 +14,19 @@ module.exports = {
 				'Agrandir-Regular': ['Agrandir-regular'],
 				'Agrandir-ThinItalic': ['Agrandir-ThinItalic'],
 				'Agrandir-Tight': ['Agrandir-Tight'],
+			},
+			lineHeight: {
+				'large': '3.5rem',
+				'medium': '2.5rem',
+				'small': '2rem'
 			}
 		},
 		fontSize: {
-			'AgrandirBlack': '5rem',
-			'AgrandirRegular': '3rem'
+			'3xl': '1.5rem',
+			'4xl': '2rem',
+			'5xl': '3rem',
+			'6xl': '4rem',
+			'7xl': '5rem',
 		}
 	},
 	variants: {},
