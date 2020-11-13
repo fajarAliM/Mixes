@@ -11,3 +11,31 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+body {
+    background-color: #E2FEFF;
+}
+
+@font-face {
+    font-family: 'Agrandir';
+    src: local('Agrandir-black'), url(/static/fonts/Agrandir-GrandHeavy.otf);
+}
+
+@font-face {
+    font-family: 'Agrandir-Regular';
+    src: local('Agrandir-Regular'), url(/static/fonts/Agrandir-WideLight.otf);
+}
+
+@font-face {
+    font-family: 'Agrandir-ThinItalic';
+    src: local('Agrandir-ThinItalic'), url(/static/fonts/Agrandir-ThinItalic.otf);
+}
+
+@font-face {
+    font-family: 'Agrandir-Tight';
+    src: local('Agrandir-Tight'), url(/static/fonts/Agrandir-Tight.otf);
+}
+
+.submit-button {
+    background-image: url("../static/submit-button-background.png");
+    background-size: 100%;
+}
