@@ -36,21 +36,31 @@ const tapeData = [
         title: 'Anyware in Spacetime',
         description: 'Bruno Pernadas',
         date: '04:34'
+    }, {
+        title: 'Anyware in Spacetime',
+        description: 'Bruno Pernadas',
+        date: '04:34'
+    }, {
+        title: 'Anyware in Spacetime',
+        description: 'Bruno Pernadas',
+        date: '04:34'
     }
 ]
 
 export default function CreateTape() {
     return (
-        <div className="flex flex-col justify-center w-full">
+        <div className="flex flex-col lg:flex-row justify-center w-full">
             <div className="w-full xl:w-4/5 px-6 md:px-16 mt-8 sm:mt-16">
                 <img src={'../static/logo.png'} alt="logo-image" className="w-32 sm:w-48 md:w-56" />
-                <h1 className="text-4xl sm:text-5xl md:text-6xl font-Agrandir mt-8 sm:mt-16">Create a Tape</h1>
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-Agrandir mt-8 sm:mt-16 flex">Create a Tape
+                    <img className="flex lg:hidden ml-4" src={"../static/illustrations/Group.svg"} />
+                </h1>
                 <button className="flex flex-row items-center">
-                    <p className="text-xl">NEXT SIDE</p>
+                    <p className="text-xl font-SpaceMono-regular">NEXT SIDE</p>
                     <img src={"../../static/left-arrow.svg"} className="ml-4" />
                 </button>
                 <div
-                    className="mt-6 border border-gray-600 shadow-shadowBox bg-white w-full xl:w-TapeBox h-tapeBox overflow-y-scroll left-scroll">
+                    className="mt-6 border border-gray-600 shadow-shadowBox bg-white w-full h-tapeBox overflow-y-scroll left-scroll">
                     <div className="flex flex-col items-start mx-0 md:mx-4 flex-1">
                         {tapeData.map((items, i) =>
                             <div className="flex flex-row justify-between items-center md:items-start w-full border-b border-black">
@@ -61,12 +71,19 @@ export default function CreateTape() {
                                         <p className="font-Agrandir-Regular tracking-wider text-xl text-left">{items.description}</p>
                                     </div>
                                 </div>
-                                <p className="font-Agrandir text-3xl w-16 py-4">{i + 1}</p>
+                                <p className="font-Agrandir text-3xl w-16 py-4">
+                                    {i < 9 ? "0" : ""}
+                                    {i + 1}
+                                </p>
                             </div>
                         )}
                     </div>
 
                 </div>
+            </div>
+            <div className="w-full lg:flex-1 mt-auto py-12 lg:py-0 flex items-start px-6 md:px-16">
+                <button className="w-64 text-3xl submit-button h-formElementBig font-SpaceMono-bold">
+                    DONE</button>
             </div>
         </div>
     )

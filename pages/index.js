@@ -56,14 +56,17 @@ export default function IndexPage() {
 				<div className="mt-8 sm:mt-16">
 					<div className="w-full xl:w-4/5 px-6 md:px-16">
 						<img src={'../static/logo.png'} alt="logo-image" className="w-32 sm:w-48 md:w-56" />
-						<h1 className="text-4xl sm:text-5xl md:text-6xl font-Agrandir mt-8 sm:mt-16">Create a Tape</h1>
+						<h1 className="text-4xl sm:text-5xl md:text-6xl font-Agrandir mt-8 sm:mt-16 flex">Create a Tape
+						<img className="hidden lg:flex ml-4" src={"../static/illustrations/Group75.svg"} />
+							<img className="flex lg:hidden ml-4" src={"../static/illustrations/Group.svg"} />
+						</h1>
 						<p className="leading-small sm:leading-medium md:leading-large font-Agrandir-Regular font-bold font-hairline text-3xl sm:text-4xl md:text-5xl mb-6">
 							Spotify is a great tool for making&nbsp;
 							<span className="font-Agrandir text-indigo-500">mixtapes.&nbsp;</span>
 							With this tool you can take all your favorite songs from Spotify and we will help you use your tapes most efficiently.</p>
 						<form className="flex flex-col justify-between items-center lg:flex-row mt-8 sm:mt-16 w-full lg:w-4/5 pb-32" onSubmit={handleSubmit}>
 							<input
-								className="w-full lg:flex-1 border border-gray-600 px-4 tracking-widest h-formElementSmall md:h-formElementBig"
+								className="text-3xl bg-white w-full lg:flex-1 font-SpaceMono-italic border border-gray-600 px-4 tracking-widest h-formElementSmall md:h-formElementBig"
 								type="url"
 								name="q"
 								value={url || ''}
@@ -71,7 +74,7 @@ export default function IndexPage() {
 								placeholder="ENTER A SPOTIFY URL"
 							/>
 							<select
-								className="w-full lg:w-32 mx-0 lg:mx-4 border border-gray-600 px-2 font-bold mt-6 lg:mt-0 h-formElementSmall md:h-formElementBig"
+								className="text-3xl bg-white w-full lg:w-32 mx-0 lg:mx-4 border border-gray-600 px-2 font-bold mt-6 lg:mt-0 h-formElementSmall md:h-formElementBig font-SpaceMono-italicBold"
 								id="length"
 								value={length}
 								onChange={(event) =>
@@ -82,8 +85,9 @@ export default function IndexPage() {
 								<option value="90">C90</option>
 								<option value="120">C120</option>
 							</select>
-							<button className="w-64 text-2xl mx-0 lg:mx-4 submit-button font-Agrandir-Tight mt-6 lg:mt-0 h-formElementBig">
-								Submit
+							<button
+								className="w-64 text-3xl mx-0 lg:mx-4 submit-button font-SpaceMono-bold mt-6 lg:mt-0 h-formElementBig">
+								SUBMIT
 					</button>
 						</form>
 						{isError && (

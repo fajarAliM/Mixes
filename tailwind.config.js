@@ -14,6 +14,10 @@ module.exports = {
 				'Agrandir-Regular': ['Agrandir-regular'],
 				'Agrandir-ThinItalic': ['Agrandir-ThinItalic'],
 				'Agrandir-Tight': ['Agrandir-Tight'],
+				'SpaceMono-regular': ['SpaceMono-regular'],
+				'SpaceMono-italic': ['SpaceMono-italic'],
+				'SpaceMono-italicBold': ['SpaceMono-italicBold'],
+				'SpaceMono-bold': ['SpaceMono-bold'],
 			},
 			lineHeight: {
 				'large': '3.5rem',
