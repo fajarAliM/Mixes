@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 export default function LoadingSplash() {
     return (
-        <div className="flex flex-col items-center justify-center w-full h-screen">
+        <div className="flex flex-col items-center justify-center w-full h-fullvertical">
             <Head>
 				<title>Loading...</title>
 			</Head>

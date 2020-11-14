@@ -39,3 +39,7 @@ body {
     background-image: url("../static/submit-button-background.png");
     background-size: 100%;
 }
+
+.left-scroll {
+    direction: rtl;
+}

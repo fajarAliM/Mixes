@@ -63,7 +63,7 @@ export default function IndexPage() {
 							With this tool you can take all your favorite songs from Spotify and we will help you use your tapes most efficiently.</p>
 						<form className="flex flex-col justify-between items-center lg:flex-row mt-8 sm:mt-16 w-full lg:w-4/5 pb-32" onSubmit={handleSubmit}>
 							<input
-								className="w-full lg:flex-1 border border-gray-600 px-4 tracking-widest h-12 md:h-16"
+								className="w-full lg:flex-1 border border-gray-600 px-4 tracking-widest h-formElementSmall md:h-formElementBig"
 								type="url"
 								name="q"
 								value={url || ''}
@@ -71,7 +71,7 @@ export default function IndexPage() {
 								placeholder="ENTER A SPOTIFY URL"
 							/>
 							<select
-								className="w-full lg:w-32 mx-0 lg:mx-4 border border-gray-600 px-2 font-bold mt-6 lg:mt-0 h-12 md:h-16"
+								className="w-full lg:w-32 mx-0 lg:mx-4 border border-gray-600 px-2 font-bold mt-6 lg:mt-0 h-formElementSmall md:h-formElementBig"
 								id="length"
 								value={length}
 								onChange={(event) =>
@@ -82,7 +82,7 @@ export default function IndexPage() {
 								<option value="90">C90</option>
 								<option value="120">C120</option>
 							</select>
-							<button className="w-64 text-2xl mx-0 lg:mx-4 submit-button font-Agrandir-Tight mt-6 lg:mt-0 h-16">
+							<button className="w-64 text-2xl mx-0 lg:mx-4 submit-button font-Agrandir-Tight mt-6 lg:mt-0 h-formElementBig">
 								Submit
 					</button>
 						</form>
