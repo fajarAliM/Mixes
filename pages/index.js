@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { getPlaylistId } from '@/lib/util';
 import LoadingSplash from '@/components/loadingSplash';
+import MainPageIllustrations from '@/components/mainPageIllustrations';
 
 export default function IndexPage() {
 	const [url, setUrl] = useState('');
@@ -38,7 +39,7 @@ export default function IndexPage() {
 	}, [])
 
 	return (
-		<div className="flex flex-col justify-center w-full">
+		<div className="flex flex-col justify-center w-screen overflow-hidden">
 			<Head>
 				<title>Create a Tape by bsides</title>
 				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -51,9 +52,12 @@ export default function IndexPage() {
 
 			{load && <LoadingSplash />}
 
+			{!load &&
+					<MainPageIllustrations />
+			}
 
 			{!load &&
-				<div className="mt-8 sm:mt-16">
+				<div className="mt-8 sm:mt-16 z-10">
 					<div className="w-full xl:w-4/5 px-6 md:px-16">
 						<img src={'../static/logo.png'} alt="logo-image" className="w-32 sm:w-48 md:w-56" />
 						<h1 className="text-4xl sm:text-5xl md:text-6xl font-Agrandir mt-8 sm:mt-16 flex">Create a Tape

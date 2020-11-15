@@ -45,6 +45,7 @@ module.exports = {
 			formElementBig:'64px',
 			fullvertical: '100vh',
 			tapeBox: '500px',
+			fullHeight: '100%',
 		}
 	},
 	variants: {},
