@@ -39,7 +39,7 @@ export default function IndexPage() {
 	}, [])
 
 	return (
-		<div className="flex flex-col justify-center w-screen overflow-hidden">
+		<div className="flex flex-col justify-center items-center w-full overflow-hidden">
 			<Head>
 				<title>Create a Tape by bsides</title>
 				<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />

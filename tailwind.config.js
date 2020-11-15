@@ -27,6 +27,12 @@ module.exports = {
 			width: {
 				'TapeBox': '1030px',
 				'TapeBox-medium': '950px',
+			},
+			margin: {
+				md: '100px',
+				lg: '300px',
+				larger: '400px',
+				xl: '500px',
 			}
 		},
 		fontSize: {
@@ -46,6 +52,7 @@ module.exports = {
 			fullvertical: '100vh',
 			tapeBox: '500px',
 			fullHeight: '100%',
+			small: '30px',
 		}
 	},
 	variants: {},

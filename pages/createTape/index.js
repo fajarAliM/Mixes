@@ -49,8 +49,8 @@ const tapeData = [
 
 export default function CreateTape() {
     return (
-        <div className="flex flex-col lg:flex-row justify-center w-full">
-            <div className="w-full xl:w-4/5 px-6 md:px-16 mt-8 sm:mt-16">
+        <div className="flex flex-col lg:flex-row justify-center items-center w-full">
+            <div className="w-full xl:w-4/5 px-6 md:px-16 mt-8 sm:mt-16 z-10">
                 <img src={'../static/logo.png'} alt="logo-image" className="w-32 sm:w-48 md:w-56" />
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-Agrandir mt-8 sm:mt-16 flex">Create a Tape
                     <img className="flex lg:hidden ml-4" src={"../static/illustrations/Group.svg"} />
@@ -61,6 +61,12 @@ export default function CreateTape() {
                 </button>
                 <div
                     className="mt-6 border border-gray-600 shadow-shadowBox bg-white w-full h-tapeBox overflow-y-scroll left-scroll">
+                        <div className="flex flex-col items-center justify-center create-tape-mark h-mark absolute -mt-12 -mr-6 lg:-mr-12">
+                            <p className="font-Agrandir">SIDE</p>
+                            <p className="font-Agrandir text-white">A</p>
+                            <p className="font-Agrandir">23:39</p>
+                        </div>
+                    <div className="w-full h-small border-b border-gray-700"></div>
                     <div className="flex flex-col items-start mx-0 md:mx-4 flex-1">
                         {tapeData.map((items, i) =>
                             <div className="flex flex-row justify-between items-center md:items-start w-full border-b border-black">
@@ -81,8 +87,23 @@ export default function CreateTape() {
 
                 </div>
             </div>
-            <div className="w-full lg:flex-1 mt-auto py-12 lg:py-0 flex items-start px-6 md:px-16">
-                <button className="w-64 text-3xl submit-button h-formElementBig font-SpaceMono-bold">
+            <img
+                className="absolute z-0 right-0 mr-56 -mt-12 bottom-0 lg:bottom-auto hidden lg:flex"
+                src={"../../static/illustrations/Group17.svg"} />
+            <img
+                className="absolute z-0 right-0 mr-32 -mt-12 bottom-0 lg:bottom-auto"
+                src={"../../static/illustrations/Group43.svg"} />
+                <img
+                    className="absolute z-1 right-0 mr-20 lg:mr-48 mt-56 bottom-0 lg:bottom-auto -mb-12 lg:mb-auto w-12 lg:w-auto"
+                    src={"../../static/illustrations/path.svg"} />
+            <img
+                className="absolute z-0 transform -rotate-12 right-0 mt-24 mr-12 bottom-0 lg:bottom-auto w-56 lg:w-auto"
+                src={"../../static/illustrations/Group2.svg"} />
+                <img
+                    className="absolute z-0 right-0 mr-0 lg:mr-12 mt-56 w-56 lg:w-auto bottom-0 lg:bottom-auto -mb-24 lg:mb-auto"
+                    src={"../../static/illustrations/Group74.svg"} />
+            <div className="w-full lg:flex-1 mt-auto py-12 lg:py-0 flex justify-start lg:justify-end px-6 md:px-16">
+                <button className="z-10 w-64 text-3xl submit-button h-formElementBig font-SpaceMono-bold">
                     DONE</button>
             </div>
         </div>
