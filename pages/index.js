@@ -17,18 +17,18 @@ export default function IndexPage() {
 
 		const id = getPlaylistId(url);
 
-		// if (id) {
-		// 	router.push({
-		// 		pathname: `/tape/${id}`,
-		// 		query: { length },
-		// 	});
-		// } else {
-		// 	setError(true);
-		// }
+		if (id) {
+			router.push({
+				pathname: `/tape/${id}`,
+				query: { length },
+			});
+		} else {
+			setError(true);
+		}
 
-		router.push({
-			pathname: `/createTape`
-		});
+		// router.push({
+		// 	pathname: `/createTape`
+		// });
 	};
 
 	useEffect(() => {

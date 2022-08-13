@@ -21,7 +21,7 @@ export default function Tape() {
 	if ( ! data && ! error ) {
 		return <Loading />;
 	}
-
+	if(data) console.log("cassets", data)
 	return (
 		<div className="font-sans antialiased flex flex-col max-w-2xl mx-auto h-full mt-8">
 			<Head>
